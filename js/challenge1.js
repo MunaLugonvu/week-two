@@ -4,13 +4,15 @@ function calculateAge(birth_year) {
         input: process.stdin,
         output: process.stdout
     });
+    
     rl.question('Please enter your Year of Birth:', (birth_year) =>{
-        rl.close();
-    })
        
+        rl.close();
+        
+    
         let date = new Date()
-        current_year =date.getFullYear()
-        age = current_year -$[birth_year];
+        current_year = date.getFullYear()
+        age = current_year - birth_year;
 
 
         if (age < 18) {
@@ -27,3 +29,5 @@ function calculateAge(birth_year) {
     
 
     }
+    )};
+calculateAge(2004)
