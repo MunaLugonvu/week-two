@@ -1,16 +1,23 @@
-let square = new Object();
-let square = {
-    2: 4,
-    3: 9, 
-    4: 16, 
-    5: 25, 
-    6: 36,
-    7:49,
-    8:64,
-    9:81,
-    10:100,
-    11:121,
-    12:144,
-    13:169,
-    14:196,
+
+function square(a){
+   return ( a*a);
 };
+
+let squares = {
+     "1":square(1),
+     '2':square(2),
+     '3':square(3),
+     '4':square(4),
+    '5':square(5),
+     '6':square(6),
+     '7':square(7),
+     '8':square(8),
+     '9':square(10),
+     '10':square(11),
+     '12':square(12),
+     '13':square(13),
+     '14':square(14),
+     '15':square(15),
+}
+        
+  console.log(squares);
