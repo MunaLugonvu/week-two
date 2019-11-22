@@ -30,4 +30,4 @@ function calculateAge(birth_year) {
 
     }
     )};
-calculateAge(2004)
+calculateAge()
