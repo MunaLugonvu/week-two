@@ -1,4 +1,4 @@
-
+function vowel_count(str1)
 
 {
     var vowel_list = 'aeiouAEIOU';
