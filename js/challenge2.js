@@ -17,8 +17,12 @@ function vowel_count(str1)
   }
   
   function showOnlyVowels(string) {
-      return Array.prototype.filter.call(string, char => "aeiou".includes(char)).join("")
-    }
-     
+     return Array.prototype.filter.call(string, char => "aeiou".includes(char)).join("")
+    
+            
+   }
+    
+         
+    
     console.log(showOnlyVowels("awesomeness"), vowel_count("awesomeness")) ;
   
