@@ -1,18 +1,14 @@
-function calculateAge(birth_year) {
-    const readline = require("readline");
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
+function calculateAge(birthYear) {
+  
     
-    rl.question('Please enter your Year of Birth:', (birth_year) =>{
+    rl.question('Please enter your Year of Birth:', (birthYear) =>{
        
         rl.close();
         
-    
+      
         let date = new Date()
-        current_year = date.getFullYear()
-        age = current_year - birth_year;
+        currentYear = date.getFullYear()
+        age = currentYear - birthYear;
 
 
         if (age < 18) {
@@ -27,7 +23,13 @@ function calculateAge(birth_year) {
             console.log("You are an adult!")
         }
     
-
+       
     }
-    )};
-calculateAge()
+    )}; 
+
+     const readline = require("readline");
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+    calculateAge()
