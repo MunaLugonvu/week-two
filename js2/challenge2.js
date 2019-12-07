@@ -1,19 +1,19 @@
-function vowel_count(str1)
+function vowelCount(str1)
 
 {
-    var vowel_list = 'aeiouAEIOU';
-    var vcount = 0;
+    var vowelList = 'aeiouAEIOU';
+    var vCount = 0;
     
     for(var x = 0; x < str1.length ; x++)
     {
-      if (vowel_list.indexOf(str1[x]) !== -1)
+      if (vowelList.indexOf(str1[x]) !== -1)
       {
-        vcount += 1;
+        vCount += 1;
   
       }
     
     }
-    return vcount;
+    return vCount;
   }
   
   function showOnlyVowels(string) {
@@ -24,5 +24,5 @@ function vowel_count(str1)
     
          
     
-    console.log(showOnlyVowels("awesomeness"), vowel_count("awesomeness")) ;
+    console.log(showOnlyVowels("Junior"), vowelCount("Junior")) ;
   
