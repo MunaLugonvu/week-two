@@ -1,29 +1,22 @@
-function vowelCount(str1)
 
-{
-    var vowelList = 'aeiouAEIOU';
-    var vCount = 0;
+    const vowels = ['a','e','i','o','u','A','E','I','O','U']; // List of Vowels
+    var vowelsOnly =[];// I  am declaring the array going to store the vowels
+    var duplicateVowels = "";// declaring an empty string going to contain the number of the duplicated vowels
    
-    
-    for(var x = 0; x < str1.length ; x++)
-    {
-      if (vowelList.indexOf(str1[x]) !== -1)
-      {
-        vCount += 1;
-  
-      }
-    
-    }
-    return vCount;
-  }
-  
-  function showOnlyVowels(string) {
-     return Array.prototype.filter.call(string, char => "aeiou".includes(char)).join("")
-    
+    function vowelCount(str1){
+        for (const letter of str1) {
+        for (const vowel of vowels) {
+          if (vowel===letter) {
+            if(vowelsOnly.includes(letter)){// checking if vowel already exists in our string
+             ++duplicateVowels
+            }else{
+              vowelsOnly+= letter;
+            }
             
-   }
+          }
+        } 
+          }
+          return ( `('${vowelsOnly}', ${duplicateVowels})`); 
+        }
     
-         
-    
-    console.log(showOnlyVowels("Junior"), vowelCount("Junior")) ;
-  
+      console.log(vowelCount("Amaaaaazingg"));
